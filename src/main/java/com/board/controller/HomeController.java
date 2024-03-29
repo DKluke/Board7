@@ -41,12 +41,20 @@ public class HomeController {
 		
 		UserVo userVo = userMapper.login(userid,passwd);
 		
-		HttpSession session = request.getSession();
+		String loc    = "";
+		
+		if(userVo !=null) { // 아이디 암호가 일치하면
+			HttpSession session = request.getSession();
 		session.setAttribute("login", userVo);
-		session.setMaxInactiveInterval(30 *60); 
+		session.setMaxInactiveInterval(30 *60);
+		loc = "redirect:/";
+		} else { // 틀리면
+			
+			loc ="redirect:/loginForm";
+		} 
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("redirect:/");
+		mv.setViewName(loc);
 				
 		return mv;	
 		
