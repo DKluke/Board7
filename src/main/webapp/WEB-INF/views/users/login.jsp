@@ -49,7 +49,7 @@
 	 
 	 <tr>
 	   <td colspan="2">
-	    <input type="submit" value="추가" />
+	    <input type="submit" value="로그인" />
 	    <input type="button" value="목록" id="goList" />
 	   </td>
 	 </tr>
@@ -62,7 +62,7 @@
   <script>
   	const  goListEl  = document.getElementById('goList');
   	goListEl.addEventListener('click', function(e) {
-  		location.href = '/Users/List';
+  		location.href = '/';
   	})
   
   </script>
