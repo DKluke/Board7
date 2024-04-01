@@ -24,6 +24,10 @@
 	<div>&nbsp;</div>
 	<div><a href="/Board/List?menu_id=MENU01">게시판 목록</a></div>
 	<div><a href="/Board/WriteForm?menu_id=MENU01">게시글 쓰기</a></div>
+
+	<div>&nbsp;</div>
+	<div><a href="/BoardPaging/List?menu_id=MENU01">게시판 목록(페이징)</a></div>
+	<div><a href="/BoardPaging/WriteForm?menu_id=MENU01">게시글 쓰기(페이징)</a></div>
 	<div>&nbsp;</div>
 	
 	<c:if test="${sessionScope.login == null || login ==''}">
