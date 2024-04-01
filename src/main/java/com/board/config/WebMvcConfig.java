@@ -27,7 +27,7 @@ public class WebMvcConfig implements WebMvcConfigurer{
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-       System.out.println("okokok");
+        //System.out.println("okokok");
         registry.addInterceptor( loginCheckInterceptor )
                 .addPathPatterns("/**")      // http://localhost:9090/
                 .addPathPatterns("/**/*")    

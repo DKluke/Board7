@@ -35,7 +35,7 @@
 </head>
 <body>
   <main>
-	<h2>사용자 등록</h2>
+	<h2>로그인</h2>
 	<form action="/login" method="POST">
 	<table>
 	 <tr>
@@ -50,7 +50,7 @@
 	 <tr>
 	   <td colspan="2">
 	    <input type="submit" value="로그인" />
-	    <input type="button" value="목록" id="goList" />
+	    <input type="button" value="HOME" id="goList" />
 	   </td>
 	 </tr>
 	
